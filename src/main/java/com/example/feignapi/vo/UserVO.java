@@ -6,11 +6,13 @@ import lombok.Data;
 @Data
 public class UserVO {
     private Long id;
-    private String username;
+    private String firstName;
+    private String lastName;
     private String email;
     private String phoneNumber;
-    private String profileImage;
+    private String avatar;
     private String description;
-    private Long roleId;
+    private Integer roleType;
     private String token;
+    private String password;
 }
