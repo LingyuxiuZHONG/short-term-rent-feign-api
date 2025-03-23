@@ -14,5 +14,4 @@ public class UserVO {
     private String description;
     private Integer roleType;
     private String token;
-    private String password;
 }

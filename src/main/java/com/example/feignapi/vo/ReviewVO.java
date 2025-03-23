@@ -2,6 +2,7 @@ package com.example.feignapi.vo;
 
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -12,5 +13,6 @@ public class ReviewVO {
     private Long reviewerId;
     private Double rating;
     private String content;
-    private Date createdAt;
+    private LocalDateTime createdAt;
+    private UserVO reviewer;
 }

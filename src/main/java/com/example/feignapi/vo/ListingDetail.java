@@ -1,12 +1,13 @@
 package com.example.feignapi.vo;
 
+
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
-public class ListingCard {
-
+public class ListingDetail {
     private Long id;
     private String title;
     private String description;
@@ -19,5 +20,7 @@ public class ListingCard {
     private Integer bathrooms;
     private String listingType;
     private Integer maxGuests;
-
+    private UserVO host;
+    private List<String> amenities;
+    private List<String> images;
 }
