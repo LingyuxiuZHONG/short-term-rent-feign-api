@@ -5,6 +5,7 @@ import com.example.common.ApiResponse;
 import com.example.feignapi.vo.FavoriteCard;
 import com.example.feignapi.vo.FavoriteListing;
 import com.example.feignapi.vo.ListingCard;
+import com.example.feignapi.vo.ListingDetail;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,4 +26,7 @@ public interface ListingClient {
 
     @PostMapping("/api/listings/{id}/images")
     ResponseEntity<ApiResponse<String>> uploadImages(@PathVariable Long id, @RequestParam("imageFiles") List<String> fileUrls);
+
+    @GetMapping("/api/listings/{listingId}")
+    ResponseEntity<ApiResponse<ListingDetail>> getListingById(@PathVariable Long listingId);
 }

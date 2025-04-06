@@ -20,7 +20,12 @@ public class ListingDetail {
     private Integer bathrooms;
     private String listingType;
     private Integer maxGuests;
+    private String checkInInstructions;
+    private String cancelPolicy;
+    private Double longitude;
+    private Double latitude;
     private UserVO host;
+    private List<String> rules;
     private List<String> amenities;
     private List<String> images;
 }

@@ -7,10 +7,10 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
-public class BookingVO {
+public class BookingCard {
     private Long id;              // 预订ID
     private Long listingId;       // 房源ID
-    private Long bookingUserId;         //
+    private Long guestId;         // 房客ID
     private Long hostId;          // 房东ID
     private LocalDate startDate;  // 入住日期
     private LocalDate endDate;    // 退房日期
@@ -30,4 +30,5 @@ public class BookingVO {
     private LocalDateTime cancelledAt; // 取消时间
     private LocalDateTime completedAt; // 完成时间
 
+    private ListingDetail listingDetail;
 }

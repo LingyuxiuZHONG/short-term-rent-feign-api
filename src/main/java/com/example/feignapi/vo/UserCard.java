@@ -6,7 +6,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-public class UserVO {
+public class UserCard {
     private Long id;
     private String firstName;
     private String lastName;
@@ -15,6 +15,5 @@ public class UserVO {
     private String avatar;
     private String description;
     private Integer roleType;
-    private String token;
     private LocalDateTime createdAt;
 }
